@@ -1,3 +1,21 @@
-.products-container {
+.product-container {
     margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.product-list-container {
+    width: 96.85%;
+}
+
+.nav-cust-dark {
+    background-color: rgb(229, 233, 235);
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.calc-buttons > * {
+    margin: 0px 2px;
+    padding: 12px 10px;
 }

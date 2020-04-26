@@ -24,7 +24,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/js/app.js')
-    //.addEntry('page1', './assets/js/page1.js')
+    .addEntry('products', './assets/js/Product.jsx')
     //.addEntry('page2', './assets/js/page2.js')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
@@ -67,7 +67,13 @@ Encore
     //.autoProvidejQuery()
 
     // uncomment if you use API Platform Admin (composer req api-admin)
-    //.enableReactPreset()
+    .enableReactPreset()
+    .configureBabel(function (babelConfig) {
+        babelConfig.plugins = [
+            "@babel/plugin-proposal-object-rest-spread","@babel/plugin-proposal-class-properties",
+            "@babel/plugin-transform-runtime"
+        ]
+    })
     //.addEntry('admin', './assets/js/admin.js')
 ;
 

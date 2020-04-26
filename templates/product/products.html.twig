@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Shop{% endblock %}
+
+{% block body %}
+    <div id="products" class="product-container"></div>
+{% endblock %}
+
+{% block pagescripts %}
+    {{ encore_entry_script_tags('products') }}
+{% endblock %}

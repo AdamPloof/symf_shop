@@ -70,21 +70,19 @@
     flex-direction: row;
 }
 
+.cart-content .carousel {
+    width: 100%;
+}
+
+.cart-content .carousel-inner {
+    width: 100%;
+}
+
+
 .cart-body,
 .cart-body-overlap {
     display: flex;
     flex-direction: row;
-}
-
-.cart-body {
-    z-index: 1;
-    width: 100%;
-    overflow: hidden;
-}
-
-.cart-body-overlap {
-    z-index: 2;
-    width: 0%;
 }
 
 .cart-body-sidebar {
@@ -128,4 +126,8 @@
 
 .cart-body-overlap {
     background-color: grey;
+}
+
+.cart-form {
+    margin: 35px;
 }

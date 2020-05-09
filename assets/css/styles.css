@@ -19,3 +19,113 @@
     margin: 0px 2px;
     padding: 12px 10px;
 }
+
+/* Cart Styles */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(158, 157, 157);
+    margin: 35px;
+    border: 1px solid rgb(131, 131, 131);
+
+}
+
+.header-row,
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+
+.header-row div,
+.nav-row div {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.header-row {
+    background-color: indianred;
+    color: white;
+}
+
+.nav-row {
+    background-color: rgb(202, 240, 164);
+}
+
+.nav-row-right,
+.nav-row-left {
+    padding: 6px 0px;
+}
+
+.nav-row a {
+    margin: 0px 24px;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-body,
+.cart-body-overlap {
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-body {
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cart-body-overlap {
+    z-index: 2;
+    width: 0%;
+}
+
+.cart-body-sidebar {
+    width: 20%;
+    border-right: 1px solid rgb(131, 131, 131);
+
+}
+
+.cart-body-sidebar .list-group {
+    margin: 12px;
+}
+
+.cart-body-main {
+    width: 80%;
+}
+
+.cart-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: lightgray;
+    border-top: 1px solid rgb(131, 131, 131);
+}
+
+.cart-footer div {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.cart-footer .footer-left {
+    justify-self: flex-start;
+}
+
+.cart-footer .footer-right {
+    justify-self: flex-end;
+}
+
+/* Cart Overlap */
+
+.cart-body-overlap {
+    background-color: grey;
+}

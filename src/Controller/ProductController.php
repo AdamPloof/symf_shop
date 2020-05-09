@@ -135,6 +135,16 @@ class ProductController extends AbstractController
         $price = $rough_price + (99 - ($rough_price % 100));
         return $price;
     }
+
+    /**
+     * @Route("/cart", name="cart")
+     */
+    public function cartView()
+    {
+        // A basic cart view
+        return $this->render("product/cart.html.twig");
+
+    }
 }
 
 

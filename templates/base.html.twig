@@ -25,6 +25,18 @@
         <div class="container">
             {% block body %}{% endblock %}
         </div>
+        <div class="notification-container">
+            <div id="box-bouncy" class="notification-bounce box-bounce">
+                <div class="box-message">Remember to do something!</div>
+            </div>
+            <div class="alert-box">
+                <div class="box-message"><strong>Hey There!</strong> Watcha say, watcha say, whatcha say, wha?</div>
+                <div class="timer-container">
+                    <strong>Time Elapsed:&nbsp;</strong>
+                    <div id="box-timer" data-starttime="2020-07-04 23:00:00"></div>
+                </div>
+            </div>
+        </div>
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
                 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

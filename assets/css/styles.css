@@ -131,3 +131,93 @@
 .cart-form {
     margin: 35px;
 }
+
+/* Alert Box */
+.notification-container {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+.alert-box,
+.notification-bounce {
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    color: #856404;
+	background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    opacity: 90%;
+	border-radius: .25rem;
+}
+
+.alert-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 18px;
+}
+
+.notification-bounce {
+    align-self: flex-end;
+    margin: 0 100px 79px auto;
+    width: 140px;
+    height: 70px;
+}
+
+.notification-bounce:after, .notification-bounce:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.notification-bounce:after {
+	border-color: rgba(255, 243, 205, 0);
+	border-top-color: #fff3cd;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.notification-bounce:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: transparent;
+	border-width: 21px;
+	margin-left: -21px;
+}
+
+.box-bounce {
+    animation: 
+        box-bounce 2s ease infinite,
+        box-fade 3s ease 4s 1 forwards;
+    transform-origin: bottom;
+}
+@keyframes box-bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-50px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+@keyframes box-fade {
+    0% { opacity: 100%; }
+    100% { opacity: 0%; }
+}
